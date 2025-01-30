@@ -1,0 +1,83 @@
+body{
+    color: white;
+    font-family: "Roboto", serif;
+}
+.container{
+    padding: 30px 0 30px 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: auto;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.time{
+    font-size: 100px;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
+.buttons button{
+    width: 100px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: white;
+    background: #4CAF50;
+    font-family: "Roboto", serif;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.buttons button:hover{
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+.buttons button:active{
+    background-color: #2e7d32;
+}
+.laps{
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+    gap: 10px;
+    margin-top: 15px;
+    width: 330px;
+    background-color: #014213;
+}
+#lapBtn{
+    position: relative;
+}
+.comingSoon{
+    width: 120px;
+    height: 20px;
+    background-color: orange;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+    position: absolute;
+    bottom: -24px;
+    transform: translate(-50%, 0);
+    left: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
