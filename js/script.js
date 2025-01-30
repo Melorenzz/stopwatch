@@ -46,7 +46,11 @@ startBtn.addEventListener("click", function() {
 
 stopBtn.addEventListener("click", function() {
     startBtn.disabled = false;
-    currentTime = '0:0:0:0';
+    milliseconds = 0
+    seconds = 0
+    minutes = 0
+    hours = 0;
+    currentTime = `${hours}:${minutes}:${seconds}:${milliseconds}`;
     startBtn.style.background = "#4CAF50";
     stopTimer()
 })
